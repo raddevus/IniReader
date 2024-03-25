@@ -1,5 +1,9 @@
 I needed a very simple way to read an .ini file and iterate over the sections and values.
 
+I needed to run cross-platform (not require kernel32 and GetPrivateProfileString, etc)
+
+This code simply parses the .ini file into a Dictionary.
+
 I took some sample code from the following article: https://www.codeproject.com/Articles/646296/A-Cross-platform-Csharp-Class-for-Using-INI-Files
 
 That code has locking on critical sections and writing values and caching values & I didn't need any of that so I simplified it.
